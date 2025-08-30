@@ -1,9 +1,9 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { connectToDatabase } from '../../../lib/mongodb';
-import Order from '../../../models/Order';
-import Product from '../../../models/Product';
-import User from '../../../models/User';
-import { ApiResponse, CreateOrderRequest } from '../../../types';
+import { connectToDatabase } from '../../../../lib/mongodb';
+import Order from '../../../../models/Order';
+import Product from '../../../../models/Product';
+import User from '../../../../models/User';
+import { ApiResponse, CreateOrderRequest } from '../../../../types';
 
 export default async function handler(
   req: NextApiRequest,

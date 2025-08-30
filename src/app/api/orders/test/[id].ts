@@ -2,9 +2,9 @@
 
 // 5. Fixed: /pages/api/orders/[id].ts
 import { NextApiRequest, NextApiResponse } from 'next';
-import { connectToDatabase } from '../../../lib/mongodb';
-import Order from '../../../models/Order';
-import Product from '../../../models/Product';
+import { connectToDatabase } from '../../../../lib/mongodb';
+import Order from '../../../../models/Order';
+import Product from '../../../../models/Product';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   await connectToDatabase();

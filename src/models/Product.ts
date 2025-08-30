@@ -38,8 +38,8 @@ const ProductSchema = new Schema<IProduct>({
 });
 
 // Indexes
-ProductSchema.index({ name: 1 }); // Unique index on name
-ProductSchema.index({ stockCount: 1 }); // For filtering by stock
+// ProductSchema.index({ name: 1 }); // Unique index on name
+// ProductSchema.index({ stockCount: 1 }); // For filtering by stock
 ProductSchema.index({ createdAt: -1 });
 
 export default mongoose.models.Product || mongoose.model<IProduct>('Product', ProductSchema);
